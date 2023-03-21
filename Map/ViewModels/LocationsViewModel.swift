@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import MapKit
 
 final class LocationsViewModel: ObservableObject {
     
@@ -16,5 +16,9 @@ final class LocationsViewModel: ObservableObject {
         let locations = LocationDataServices.locations
         self.locations = locations
     }
+    
+//    func mapRegion(location: Location) {
+//       return MKCoordinateRegion(center: location.locationCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+//    }
     
 }

@@ -8,16 +8,20 @@
 import Foundation
 import MapKit
 
-struct Location: Codable {
+struct Location: Codable, Identifiable {
     let name: String
-
     let capitalName: String
+    let flag: String
     let officialLanguage: String
     let memberSince: String
     let politicalsystem: String
     let tradeAndEconomy: String
     let euLink: String
     let facts: Facts
+    
+    var id: String {
+        name + capitalName
+    }
     
     struct Facts: Codable {
         let population: Int
