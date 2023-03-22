@@ -157,7 +157,7 @@
         "name": "Portugal",
         "coordinates": {
             "latitude": 38.70784,
-            "longitude": 9.13889
+            "longitude": -9.13889
         },
         "capitalName": "Lisbon",
         "officialLanguage": "Portuguese",
@@ -179,7 +179,7 @@
         "name": "Spain",
         "coordinates": {
             "latitude": 40.41921,
-            "longitude": 3.69252
+            "longitude": -3.69252
         },
         "capitalName": "Madrid",
         "officialLanguage": "Spanish",

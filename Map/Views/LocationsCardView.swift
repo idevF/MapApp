@@ -9,8 +9,9 @@ import SwiftUI
 
 struct LocationsCardView: View {
     
-    let location: Location
+    @EnvironmentObject private var locationsViewModel: LocationsViewModel
     
+    let location: Location
     
     var body: some View {
         
@@ -30,7 +31,7 @@ struct LocationsCardView: View {
             }
             Spacer()
             Button {
-                // do later
+                locationsViewModel.goToTheCapital(location: location)
             } label: {
                 Text("Go to the Capital")
                     .font(.system(size: 20, weight: .medium))
@@ -58,5 +59,6 @@ struct LocationsCardView: View {
 struct LocationsCardView_Previews: PreviewProvider {
     static var previews: some View {
         LocationsCardView(location: LocationDataServices.locations.first!)
+            .environmentObject(LocationsViewModel())
     }
 }

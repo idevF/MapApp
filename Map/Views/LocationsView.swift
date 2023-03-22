@@ -11,27 +11,25 @@ import MapKit
 struct LocationsView: View {
     
     @EnvironmentObject private var locationsViewModel: LocationsViewModel
-    
-    @State private var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 52.51874, longitude: 13.40802),
-        span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+
 
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $region)
+            Map(coordinateRegion: $locationsViewModel.mapRegion)
                 .ignoresSafeArea()
             
             
             VStack {
                 Spacer()
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
+                    HStack(spacing: 50.0) {
                         ForEach(locationsViewModel.locations) { location in
                             LocationsCardView(location: location)
                         }
                     }
                     .background(Color(uiColor: .systemFill))
                 }
+                .offset(y: 20)
             }
         }
         
