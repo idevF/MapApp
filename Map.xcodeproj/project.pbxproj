@@ -11,7 +11,8 @@
 		A251218129C9AFCB00172CD1 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A251218029C9AFCB00172CD1 /* Location.swift */; };
 		A251218329C9B2B100172CD1 /* LocationDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A251218229C9B2B100172CD1 /* LocationDataServices.swift */; };
 		A251218829C9D67A00172CD1 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A251218729C9D67A00172CD1 /* LocationsViewModel.swift */; };
-		A284FFC029CB415A0046C0BB /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284FFBF29CB415A0046C0BB /* MapAnnotationView.swift */; };
+		A284FFC029CB415A0046C0BB /* MapAnnotationButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284FFBF29CB415A0046C0BB /* MapAnnotationButtonView.swift */; };
+		A2A91B2329CC6FA80001896E /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A91B2229CC6FA80001896E /* LocationDetailView.swift */; };
 		A2DD9E2429C8F97900153D19 /* MapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DD9E2329C8F97900153D19 /* MapApp.swift */; };
 		A2DD9E2829C8F97900153D19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DD9E2729C8F97900153D19 /* Assets.xcassets */; };
 		A2DD9E2B29C8F97900153D19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DD9E2A29C8F97900153D19 /* Preview Assets.xcassets */; };
@@ -25,7 +26,8 @@
 		A251218029C9AFCB00172CD1 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		A251218229C9B2B100172CD1 /* LocationDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataServices.swift; sourceTree = "<group>"; };
 		A251218729C9D67A00172CD1 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
-		A284FFBF29CB415A0046C0BB /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		A284FFBF29CB415A0046C0BB /* MapAnnotationButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationButtonView.swift; sourceTree = "<group>"; };
+		A2A91B2229CC6FA80001896E /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		A2DD9E2029C8F97900153D19 /* Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DD9E2329C8F97900153D19 /* MapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapApp.swift; sourceTree = "<group>"; };
 		A2DD9E2729C8F97900153D19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,8 +53,9 @@
 			children = (
 				A251217A29C9A96D00172CD1 /* LocationsView.swift */,
 				A2F632FA29CA38C200D416DF /* LocationsCardView.swift */,
-				A284FFBF29CB415A0046C0BB /* MapAnnotationView.swift */,
+				A284FFBF29CB415A0046C0BB /* MapAnnotationButtonView.swift */,
 				A2E459AF29CBD432009B7C1F /* NavigationButtonView.swift */,
+				A2A91B2229CC6FA80001896E /* LocationDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,12 +196,13 @@
 			files = (
 				A251218329C9B2B100172CD1 /* LocationDataServices.swift in Sources */,
 				A2DD9E2429C8F97900153D19 /* MapApp.swift in Sources */,
+				A2A91B2329CC6FA80001896E /* LocationDetailView.swift in Sources */,
 				A251218829C9D67A00172CD1 /* LocationsViewModel.swift in Sources */,
 				A2F632FB29CA38C200D416DF /* LocationsCardView.swift in Sources */,
 				A2E459B029CBD432009B7C1F /* NavigationButtonView.swift in Sources */,
 				A251218129C9AFCB00172CD1 /* Location.swift in Sources */,
 				A251217B29C9A96D00172CD1 /* LocationsView.swift in Sources */,
-				A284FFC029CB415A0046C0BB /* MapAnnotationView.swift in Sources */,
+				A284FFC029CB415A0046C0BB /* MapAnnotationButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

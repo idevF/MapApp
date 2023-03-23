@@ -1,5 +1,5 @@
 //
-//  MapAnnotationView.swift
+//  MapAnnotationButtonView.swift
 //  Map
 //
 //  Created by idevF on 22.03.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MapAnnotationView: View {
+struct MapAnnotationButtonView: View {
     
     var body: some View {
         VStack {
@@ -39,6 +39,6 @@ struct MapAnnotationView: View {
 
 struct MapAnnotationView_Previews: PreviewProvider {
     static var previews: some View {
-        MapAnnotationView()
+        MapAnnotationButtonView()
     }
 }

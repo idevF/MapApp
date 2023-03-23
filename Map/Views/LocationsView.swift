@@ -11,46 +11,35 @@ import MapKit
 struct LocationsView: View {
     
     @EnvironmentObject private var locationsViewModel: LocationsViewModel
-
-
+    
     var body: some View {
         ZStack {
             Map(coordinateRegion: $locationsViewModel.mapRegion,
                 annotationItems: locationsViewModel.locations,
                 annotationContent: { location in
-                    MapAnnotation(coordinate: location.locationCoordinate) {
-                        HStack {
-                            NavigationButtonView(text: "PREV")
-                                .onTapGesture {
-                                    print("PressedPREV")
-                                }
-//                                .padding(.bottom, 160)
-                            
-                            MapAnnotationView()
-                            //                            .scaleEffect(locationsViewModel.mapLocation == location ? 1.2 : 0.7)
-                            
-                            //                                .animation(
-                            //                                    .easeInOut(duration: 2).repeatCount(3),
-                            //                                    value: location)
-                                .onTapGesture {
-                                    print("Pressed")
-                                }
-//                                .padding(.bottom, 120)
-                            NavigationButtonView(text: "NEXT")
-                                .onTapGesture {
-                                    print("PressedNext")
-                                }
-//                                .padding(.bottom, 160)
-                        }
-                        .padding(.bottom, 120)
+                MapAnnotation(coordinate: location.locationCoordinate) {
+                    HStack {
+                        NavigationButtonView(text: "PREV")
+                            .onTapGesture {
+                                print("PressedPREV")
+                            }
+                        
+                        MapAnnotationButtonView()
+                            .onTapGesture {
+                                print("Pressed")
+                                locationsViewModel.sheetDetail = location
+                            }
+                        NavigationButtonView(text: "NEXT")
+                            .onTapGesture {
+                                print("PressedNext")
+                            }
+                    }
+                    .padding(.bottom, 120)
                 }
-    
             })
-                .ignoresSafeArea()
-            
+            .ignoresSafeArea()
             
             VStack {
-//                Text(locationsViewModel.mapLocation.flag + " " + locationsViewModel.mapLocation.capitalName + ", " + locationsViewModel.mapLocation.name)
                 Spacer()
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 50.0) {
@@ -63,10 +52,12 @@ struct LocationsView: View {
                 .offset(y: 20)
             }
         }
-        
+        .sheet(item: $locationsViewModel.sheetDetail, onDismiss: nil) { location in
+            LocationDetailView(location: location)
+        }
         
     }
-
+    
 }
 
 struct Views_Previews: PreviewProvider {
