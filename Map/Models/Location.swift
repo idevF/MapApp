@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-struct Location: Codable, Identifiable {
+struct Location: Codable, Identifiable, Equatable {
     let name: String
     let capitalName: String
     let flag: String
@@ -40,6 +40,11 @@ struct Location: Codable, Identifiable {
     struct Coordinates: Codable {
         let latitude: Double
         let longitude: Double
+    }
+    
+    // Equatable
+    static func == (lhs: Location, rhs: Location) -> Bool {
+        lhs.id == rhs.id
     }
 }
 
