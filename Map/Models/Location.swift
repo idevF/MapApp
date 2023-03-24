@@ -19,6 +19,7 @@ struct Location: Codable, Identifiable, Equatable {
     let euLink: String
     let facts: Facts
     
+    // For comparison of locations
     var id: String {
         name + capitalName
     }

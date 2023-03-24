@@ -30,10 +30,7 @@ struct MapAnnotationButtonView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 35, height: 35)
-//                .background(Color.green.opacity(0.3))
-            
         }
-//        .background(Color.gray.opacity(0.3))
     }
 }
 
