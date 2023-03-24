@@ -6,15 +6,14 @@
 
 **Dark Mode Screenshots**
 
-|              |                |               |
+|  ![dark0](https://user-images.githubusercontent.com/124703341/227656199-c94ca92e-ad6e-40fc-9524-5430a15a5e1e.png) |  ![dark1](https://user-images.githubusercontent.com/124703341/227656206-cd00eb23-9296-4e21-9091-0703a7b7d91e.png)   | ![dark2](https://user-images.githubusercontent.com/124703341/227656210-8c831310-d367-4be1-bbf2-2d6c0799a6e9.png)  |
 |    :---:     |     :---:      |     :---:     |
-|![dark0](https://user-images.githubusercontent.com/124703341/227653168-01795459-6bf8-4ec6-b7b1-722f5880af31.png)|![dark1](https://user-images.githubusercontent.com/124703341/227653174-ae667002-70b3-40ab-a87a-d837a11b5b77.png)|![dark2](https://user-images.githubusercontent.com/124703341/227653179-45cbaf27-cb80-4216-b86d-d5197c9c7f76.png)|
+
 
 **Light Mode Screenshots**
 
-|              |                |               |
+| ![light0](https://user-images.githubusercontent.com/124703341/227656393-7f33c0ea-915d-4cbc-b624-32883f276d17.png) | ![light1](https://user-images.githubusercontent.com/124703341/227656400-08f80f82-53af-41c5-9fe4-7515466f4df3.png)  | ![light2](https://user-images.githubusercontent.com/124703341/227656406-81d22351-5e08-4b6b-9885-ecf6e383612e.png)  |
 |    :---:     |     :---:      |     :---:     |
-|![light0](https://user-images.githubusercontent.com/124703341/227653423-6784a733-cb25-4582-86e8-3b9fb91d8ae8.png)|![light1](https://user-images.githubusercontent.com/124703341/227653436-cc47fd01-3d55-4e58-95f6-f7f5800164d3.png)|![light2](https://user-images.githubusercontent.com/124703341/227653443-47249d15-0775-4751-9601-e47ed01841da.png)|
 
 
 ### Recordings
